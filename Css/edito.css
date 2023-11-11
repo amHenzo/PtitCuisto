@@ -1,0 +1,112 @@
+* {
+    font-family: 'Pacifio',cursive;
+    margin: 0;
+    padding: 0;
+}
+main{
+    display: flex;
+    flex-direction: column;
+}
+#presentation{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #2a3990;
+    gap: 15px;
+    color: white;
+    order: 1;
+}
+#presentation > img{
+    width: 50%;
+    
+}
+#recette_list{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid gray;
+    padding: 20px;
+    justify-content: center;
+    order: 2;
+    min-width: 400px;
+}
+.recettes{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border: solid 2px #2a3990;
+    margin: 10px;
+}
+.rec_img{
+    width: 100px;
+    margin: 5px;
+    padding: 10px;
+    
+}
+.spec{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 300px;
+    flex-wrap: wrap;
+}
+.rec_titre{
+    padding: 5px;
+    text-align: center;
+}
+.rec_desc{
+    text-align: center;
+    width: 250px;
+}
+.wrapper{
+    display: flex;
+    flex-direction: column;
+}
+#imgpres{
+    margin: auto;
+    width: 80%;
+    flex-grow: 12;
+    border: solid 1px #2a3990;
+    padding: 5%;
+    margin: 20px auto 20px auto;
+    max-height: 400px;
+    overflow: hidden;
+    object-fit: none;
+}
+
+@media (min-width: 800px){
+    main{
+        flex-direction: column;
+        flex-wrap: wrap;
+        margin: 50px auto 50px auto;
+    }
+    #imgpres{
+        margin: auto;
+        width: 890px;
+        flex-grow: 12;
+        border: solid 1px #2a3990;
+        padding: 10px;
+        max-height: 400px;
+        overflow: hidden;
+        object-fit: none;
+    }
+    #presentation{
+        
+        width: 400px;
+        height: 400px;
+    }
+    .wrapper{
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+        margin-top: 50px;
+    }
+    #recette_list{
+        width: 400px;
+        height: 400px;
+    }
+}
