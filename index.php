@@ -3,6 +3,9 @@ require('./Controller/Controller.php');
 $request = $_SERVER['REQUEST_URI'];
 $controller = new Controller();
 $path = parse_url($request, PHP_URL_PATH);
+if (!isset($_SESSION['utilisateur_connecte'])) {
+    $_SESSION['utilisateur_connecte'] = false;
+}
 switch ($path) {
     case ('/ptitCuisto/'):
         $controller->index();

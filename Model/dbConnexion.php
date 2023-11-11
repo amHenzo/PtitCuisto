@@ -14,14 +14,13 @@ class LoginModel
     public function connect()
     {
         try {
-            $this->db = new PDO('mysql:host=' . $this->host . ';dbname=' . $this->dbname, $this->username, $this->password);
+            $this->db = new PDO("mysql:host={$this->host};dbname={$this->dbname}", $this->username, $this->password);
             $this->db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
             return 1;
         } catch (PDOException $e) {
-            echo $e;
+            echo "Erreur de connexion à la base de données : " . $e->getMessage();
             return 0;
         }
-
     }
 
     public function recetteRequest($id)
@@ -55,6 +54,10 @@ class LoginModel
         $stmt->bindParam(':id', $id, PDO::PARAM_INT);
         $stmt->execute();
         return $stmt;
+    }
+    public function closeConnection()
+    {
+        $this->db = null;
     }
 }
 ?>
