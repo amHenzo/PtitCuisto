@@ -38,7 +38,7 @@ L’éditeur peut :
 
 **MLD**
 
-![Voici le MLD :]([/annexes/MLD.png](https://github.com/amHenzo/ptitCuisto/issues/4))
+![Voici le MLD :](https://github.com/amHenzo/ptitCuisto/issues/4)
 
 
 ## Compte
@@ -51,4 +51,5 @@ mot de passe : admin
 ## Auteurs
 
 - [Baptiste Madelaine](https://github.com/Baptiste-Madelaine)
+- [Enzo Le Coq](https://github.com/amHenzo)
 
