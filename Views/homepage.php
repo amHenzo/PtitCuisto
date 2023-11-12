@@ -16,11 +16,11 @@
 </head>
 
 <body>
-    <header>
+    
         <?php
         include($_SERVER['DOCUMENT_ROOT'] . '/ptitCuisto/Views/header.php');
         ?>
-    </header>
+    
     <main>
         <img src="../Assets/img_edito.png" alt="" srcset="" id="imgpres">
         <div class="wrapper">
@@ -63,11 +63,11 @@
 
         </div>
     </main>
-    <footer>
+    
         <?php
         include($_SERVER['DOCUMENT_ROOT'] .'/ptitCuisto/Views/footer.php');
         ?>
-    </footer>
+    
 </body>
 
 </html>

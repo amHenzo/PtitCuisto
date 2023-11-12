@@ -7,7 +7,7 @@ main{
     display: flex !important; 
     flex-direction: column;
 }
-#presentation{
+main #presentation{
     padding: 20px;
     display: flex;
     flex-direction: column;
@@ -60,7 +60,7 @@ main{
     text-align: center;
     width: 250px;
 }
-.wrapper{
+main .wrapper{
     display: flex;
     flex-direction: column;
 }
@@ -97,7 +97,7 @@ main{
         width: 400px;
         height: 400px;
     }
-    .wrapper{
+    main .wrapper{
         display: flex;
         flex-direction: row-reverse;
         align-items: center;
