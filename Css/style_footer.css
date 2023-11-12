@@ -1,0 +1,25 @@
+footer{
+    background: var(--main-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+.footer-sn{
+   display: inherit;
+}
+.fa-brands {
+    border:2px solid var(--main-white);
+    color: var(--main-white);
+    margin: 2px;
+    padding: 4px;
+}
+.fa-facebook-f{
+    background-color: #1877f2;
+}
+.fa-x-twitter{
+    background-color: #000000;
+}
+.fa-linkedin-in{
+    background-color:  #0a66c2;
+}
