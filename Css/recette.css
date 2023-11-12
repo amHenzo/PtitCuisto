@@ -1,0 +1,56 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.details-recette {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.details-recette h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.details-recette p {
+    margin: 10px 0;
+}
+
+.details-recette ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.details-recette li {
+    margin-bottom: 5px;
+}
+
+/* Styles pour les petits écrans (moins de 600px) */
+@media only screen and (max-width: 600px) {
+    .details-recette {
+        padding: 15px;
+    }
+
+    .details-recette h1 {
+        font-size: 20px;
+    }
+
+    .details-recette p {
+        font-size: 14px;
+    }
+
+    .details-recette li {
+        font-size: 14px;
+    }
+}
