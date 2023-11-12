@@ -3,7 +3,6 @@ include('./Controller/Controller.php');
 $request = $_SERVER['REQUEST_URI'];
 $controller = new Controller();
 $path = parse_url($request, PHP_URL_PATH);
-
 switch ($path) {
     case ('/ptitCuisto/'):
         $controller->index();
