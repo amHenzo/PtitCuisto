@@ -10,7 +10,7 @@ body{
     margin: 0;
     padding: 0;
 }
-.logo{
+header .logo{
     width: 50%;
     height: 50%;
     margin: 5px;
@@ -19,7 +19,7 @@ body{
     min-width: 150px;
 }
 
-.nav-bar{
+header .nav-bar{
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -45,25 +45,25 @@ header{
     display: none;
     margin: 5px;
 }
-ul{
+header  ul{
     list-style-type: none;
     padding-left: 0;
 }
 
 
 
-.menuHeader{
+header  .menuHeader{
     margin: 5px;
     padding-top: 4px;
  
 }
-label{
+header label{
     display: inline;
 }
-p{
+header p{
     font-family: 'Pacifico', cursive;
 }
-a{
+header a{
     color: var(--main-white);
     box-shadow: none;
 }

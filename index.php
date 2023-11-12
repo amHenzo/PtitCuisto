@@ -1,7 +1,7 @@
 <?php
 include('./Controller/Controller.php');
-include('./Views/header.php');
-include('./Views/footer.php');
+//include('./Views/header.php');
+//include('./Views/footer.php');
 $request = $_SERVER['REQUEST_URI'];
 $controller = new Controller();
 $path = parse_url($request, PHP_URL_PATH);

@@ -1,5 +1,5 @@
 main{
-    display: flex;
+    display: flex !important;
     flex-direction: column;
     align-items: center;
 }
@@ -8,7 +8,7 @@ main{
     margin: 0;
     padding: 0;
 }
-a{
+main a{
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -19,13 +19,13 @@ a{
     text-decoration: none;
     color: black;
 }
-.rec_img{
+main .rec_img{
     width: 100px;
     margin: 5px;
     padding: 10px;
     
 }
-.spec{
+main .spec{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -33,18 +33,18 @@ a{
     max-width: 300px;
     flex-wrap: wrap;
 }
-.rec_titre{
+main .rec_titre{
     padding: 5px;
     text-align: center;
 }
-.rec_desc{
+main .rec_desc{
     text-align: center;
     width: 250px;
 }
-.spec > h5, .spec > p{
+main .spec > h5, main .spec > p{
     text-align: left;
 }
-#pagination{
+main #pagination{
     display: flex;
     flex-wrap:nowrap;
     max-width: 50%;
@@ -52,6 +52,6 @@ a{
     gap: 10px;
     padding-bottom: 10px;
 }
-form > input[type=submit]{
+main form > input[type=submit]{
     width: 25px;
 }

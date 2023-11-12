@@ -10,6 +10,8 @@
 </head>
 
 <body>
+<?php
+include("./header.php")?>
     <main>
         <?php
         include('../Model/dbConnexion.php');
@@ -89,6 +91,8 @@
             ?>
         </div>
     </main>
+    <?php
+    include("./footer.php")?>
 </body>
 
 </html>

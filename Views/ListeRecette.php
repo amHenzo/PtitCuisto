@@ -10,6 +10,9 @@
 </head>
 
 <body>
+    <?php
+    include('./header.php');
+    ?>
     <main>
 
         <?php
@@ -51,7 +54,7 @@
         $db = new LoginModel();
         $db->connect();
         if (!isset($_GET["page"])) {
-            $_GET["page"] = 0;
+            $_GET["page"] = 1;
         }
         $nbaff = $_GET["page"];
         $nbRec = $db->getNbRecettes();
@@ -85,6 +88,9 @@
             ?>
         </div>
     </main>
+    <?php
+    include('./footer.php');
+    ?>
 </body>
 
 </html>

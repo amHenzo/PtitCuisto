@@ -16,8 +16,8 @@
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
-		<link rel="stylesheet" type="text/css"  href="../PtitCuisto/Css/style_header.css">
-		<link rel="stylesheet" type="text/css"  href="../PtitCuisto/Css/style_footer.css">
+		<link rel="stylesheet"  href="../Css/style_header.css">
+		<link rel="stylesheet"  href="../Css/style_footer.css">
 		
 		<title>PtitCuisto</title>
 	</head>
@@ -27,10 +27,10 @@
 			
 		<ul class="nav-bar">
 			<li>
-				<img class="logo" onclick="document.location.href='index.php';" src="../PtitCuisto/Assets/Logo.png" alt="logo" srcset="">
+				<img class="logo" onclick="document.location.href='./homepage.php';" src="../Assets/Logo.png" alt="logo" srcset="">
 			</li>
-			<li id="header-links"><a  onclick="document.location.href='index.php';" >Acceuil	</a></li>
-			<li id="header-links"><a	 onclick="document.location.href='/Views/ListeRecettes.php';">Nos recettes</a></li>
+			<li id="header-links"><a onclick="document.location.href='./homepage.php';" >Acceuil	</a></li>
+			<li id="header-links"><a onclick="document.location.href='./ListeRecette.php';">Nos recettes</a></li>
 			<li id="header-links" class="Scrollingmenu">
 				<a>Filtres</a>
 				<ul class="dropdown-menu">
@@ -40,7 +40,7 @@
 				</ul>
 			</li>
 			<li id="header-links">
-				<a onclick="document.location.href='/Views/login.html';"	>Connexion	</a>
+				<a onclick="document.location.href='./login.html';"	>Connexion	</a>
 			</li>
 		</ul>
 		
@@ -67,13 +67,13 @@
 				<div class="modal-content">
 					<div class="modal-header" style="padding:35px 50px;">
 					<button type="button" class="close" data-dismiss="modal">&times;</button>
-					<h4></span>Recherche par Ingredients</h4>
+					<h4></span>Recherche par Ingredient</h4>
 					</div>
 					<div class="modal-body" style="padding:40px 50px;">
-					<form role="form" method="GET">
+					<form role="form" method="GET" action="./Ingredient.php">
 						<div class="mb-3">
 							<label for="exampleFormControlInput1" class="form-label">entrez un Ingredient</label>
-							<input type="text" class="form-control" id="ingredients" placeholder="sucre">
+							<input type="text" class="form-control" name="ingredient" placeholder="Sucre">
 						</div>
 						<button type="submit" class="btn btn-success btn-block"></span> Rechercher</button>
 					</form>
@@ -96,10 +96,10 @@
 					<h4></span>Recherche par Titre</h4>
 					</div>
 					<div class="modal-body" style="padding:40px 50px;">
-					<form role="form" method="GET">
+					<form role="form" method="GET" action="./Recherche.php">
 						<div class="mb-3">
 							<label for="exampleFormControlInput1" class="form-label">entrez un titre</label>
-							<input type="text" class="form-control" id="titre" placeholder="donnut sucré au sucre">
+							<input type="text" class="form-control" name="recherche" placeholder="donnut sucré au sucre">
 						</div>
 						<button type="submit" class="btn btn-success btn-block"></span> Rechercher</button>
 					</form>
@@ -123,10 +123,10 @@
 					</div>
 					<div class="modal-body" style="padding:40px 50px;">
 					
-					<form role="form" method="GET">
+					<form role="form" method="GET" action="./Categorie.php">
 						
-						<select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example" id="categorie">
-							<option value="1" >entrée</option>
+						<select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example" name="categorie">
+							<option value="1" name="categorie">entrée</option>
 							<option value="2">plat</option>
 							<option value="3">dessert</option>
 						</select>
@@ -179,5 +179,5 @@
  
 
 
-			<script src="../PtitCuisto/ScriptJs/menuheader.js"></script>
+			<script src="../ScriptJs/menuheader.js"></script>
 	</header>

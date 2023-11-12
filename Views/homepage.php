@@ -62,23 +62,6 @@
             </div>
 
         </div>
-        <a href="./Views/ListeRecette.php">liste</a>
-        <form action="../Controller/CatController.php" method="post">
-            <input type="hidden" name="filtre" value="categorie">
-            <input type="hidden" name="categorie" value="1">
-            <input type="submit" value="Categorie">
-        </form>
-        <form action="../Controller/CatController.php" method="post">
-            <input type="hidden" name="filtre" value="rechercher">
-            <input type="text" name="titre">
-            <input type="submit" value="Rechercher">
-        </form>
-        <form action="../Controller/CatController.php" method="post">
-            <input type="hidden" name="filtre" value="ingredient">
-            <input type="hidden" name="ingredient" value="Salade">
-            <input type="submit" value="Ingredient">
-        </form>
-        <a href="./login.html">o</a>
     </main>
     <footer>
         <?php
