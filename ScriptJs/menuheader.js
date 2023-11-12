@@ -32,7 +32,7 @@ $(document).ready(function(){
       
     });
     $("#myBtnFiltres").click(function(){
-        let menuelm=document.querySelectorAll(".dropdown-menu li");
+        let menuelm=document.querySelectorAll(".dropdown-menu-1 li");
         let menu2= document.querySelectorAll(".menuHeader-content-show li");
         
         console.log(menuelm);

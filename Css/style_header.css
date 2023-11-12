@@ -169,27 +169,27 @@ header a{
         display: inline;
     }
 
-    .dropdown-menu {
+    .dropdown-menu-1 {
     display: none;
     position: absolute;
     top: 100%;
     background-color: var(--main-bg-color);
     }
 
-    .Scrollingmenu:hover .dropdown-menu {
+    .Scrollingmenu:hover .dropdown-menu-1 {
         display: block;
     }
 
     /* Style the dropdown items */
-    .dropdown-menu li {
+    .dropdown-menu-1 li {
         border-bottom: 1px solid var(--main-white);
     }
 
-    .dropdown-menu li:last-child {
+    .dropdown-menu-1 li:last-child {
         border-bottom: none;
     }
 
-    .dropdown-menu a {
+    .dropdown-menu-1 a {
         padding: 10px 20px;
         display: block;
         color: #fff;

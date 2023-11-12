@@ -33,7 +33,7 @@
 			<li id="header-links"><a onclick="document.location.href='./ListeRecette.php';">Nos recettes</a></li>
 			<li id="header-links" class="Scrollingmenu">
 				<a>Filtres</a>
-				<ul class="dropdown-menu">
+				<ul class="dropdown-menu-1">
 					<li><a id="myBtnCategorie" >Catégorie	</a></li></hr>
 					<li><a id="myBtnTitre" >Titre		</a></li></hr>
 					<li><a id="myBtnIngredients">Ingrédients	</a></li></hr>
@@ -53,9 +53,9 @@
                 </label>
             </nav>
 			<ul id="menuHeader-content" class="menuHeader-content-hide">
-				<li class="menu-content"><a	 onclick="document.location.href='/Views/ListeRecettes.php';">Nos recettes	</a></li>
+				<li class="menu-content"><a	 onclick="document.location.href='./ListeRecette.php';">Nos recettes	</a></li>
 				<li class="menu-content"><a  id="myBtnFiltres" >Filtres		</a></li>
-				<li class="menu-content "><a onclick="document.location.href='/Views/login.html';">Connexion	</a></li>
+				<li class="menu-content "><a onclick="document.location.href='./login.html';">Connexion	</a></li>
 			</ul>
 			
 			<div class="container">
